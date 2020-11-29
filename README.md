@@ -4,7 +4,6 @@ Repository made to showcase our Software Design and architecture final project
 ## Equipo
 
 * Escarcega Ramirez Erick Orlando
-* Flores Fernandez Fernando
 * Gonzalez Cardenas Jesús Antonio
 
 ## Tema
