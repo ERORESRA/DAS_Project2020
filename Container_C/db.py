@@ -4,7 +4,7 @@ from peewee import MySQLDatabase
 
 DATABASE = {
     'HOST': os.getenv('DB_HOST'),
-    'PORT': os.getenv('DB_PORT'),
+    'PORT': int(os.getenv('DB_PORT')),
     'DATABASE': os.getenv('DB_NAME'),
     'USER': os.getenv('DB_USER'),
     'PASSWORD': os.getenv('DB_PASSWORD'),

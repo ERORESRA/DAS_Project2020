@@ -30,6 +30,18 @@ services:
         - custom 
       depends_on: 
         - "db"
+  
+  python:
+    build: 
+      context: ./Container_C/
+    container_name: python_scraper
+    networks:
+      - custom  
+    depends_on: 
+      - "admin"
+    env_file:
+      - ./Container_C/env.list
+    command: python3 ./fetch.py
 
 
 volumes:
