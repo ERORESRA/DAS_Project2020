@@ -4,7 +4,7 @@
 ```sh
 docker-compose up
 ```
-2. Esperar aproximadamente 3 -  minutos a que el contenedor de MySQL este listo (MyAdmin y la aplicación de Flask estarán listos antes, pero no se tendrá acceso a la BD) y que se ejecute el contenedor para insertar los datos.
+2. Esperar aproximadamente 3 - 4 minutos a que el contenedor de MySQL este listo (MyAdmin y la aplicación de Flask estarán listos antes, pero no se tendrá acceso a la BD) y esperar a que el contenedor con el scraper cargue los datos a la base de datos (esto toma aprox. 1 - 1.5 minutos).
 
 3. Después de los periodos de tiempo dados hayan transcurrido, ya se podrá accesar a la BD, por lo tanto phpMyAdmin y la aplicación de Flask ya estarán usables.
 
