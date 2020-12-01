@@ -1,7 +1,7 @@
-from peewee import Model, CharField, IntegerField, TextField
+from peewee import Model, IntegerField, TextField, PrimaryKeyField
 from db import db
 class Artist(Model):
-    id = IntegerField()
+    id = PrimaryKeyField()
     name = TextField()
     genre = TextField()
     image_link = TextField()
@@ -12,7 +12,7 @@ class Artist(Model):
         table_name = 'Artist'
 
 class Album(Model):
-    id = IntegerField()
+    id = PrimaryKeyField()
     title = TextField()
     artist = TextField()
     genre = TextField()
@@ -23,10 +23,12 @@ class Album(Model):
         table_name = 'Album'
 
 class Track(Model):
+    id = PrimaryKeyField()
     number = IntegerField()
     title = TextField()
     artist = TextField()
     album = TextField()
+    duration = TextField()
 
     class Meta:
         database = db

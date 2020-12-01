@@ -14,5 +14,5 @@ db = MySQLDatabase(
     password=DATABASE['PASSWORD'],
     host=DATABASE['HOST'],
     database=DATABASE['DATABASE'],
-    port = DATABASE['PORT']
+    port = int(DATABASE['PORT'])
 )

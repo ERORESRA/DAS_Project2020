@@ -1,0 +1,48 @@
+{% extends "query_template.html" %}
+{% block title %} 
+<title>{{musician.name}} - Artist</title>
+{% endblock %} 
+{% block content %} 
+<table>
+  <tr>
+    <th>id</th>
+    <th>Nombre</th>
+    <th>Genero/Tag de Last.fm</th>
+    <th>Bio</th>
+    <th>Imagen</th>
+  </tr>
+  <tr>
+    <td>{{musician.id}}</td>
+    <td>{{musician.name}}</td>
+    <td>{{musician.genre}}</td>
+    <td>{{musician.bio}}</td>
+    {% if musician.name == 'not found' %}
+    <td><img src="{{url_for('static', filename='img/nothing.gif')}}"style="width:150px;height:150px;" /></td>
+    {% else %}
+    <td><img src="{{musician.image_link}}" alt="{{musician.name}}"/></td>
+    {% endif %}
+  </tr>
+</table>
+  <br>
+  <h3>Albumes del artista</h3>
+  <table>
+    <tr>
+      <th>id</th>
+      <th>Titulo</th>
+      <th>Genero/Tag de Last.fm</th>
+      <th>Arte</th>
+    </tr>
+  {% for _album in albums %}
+  <tr>
+    <td>{{_album.id}}</td>
+    <td>{{_album.title}}</td>
+    <td>{{_album.genre}}</td>
+    {% if _album.art == 'not found' %}
+    <td><img src="{{url_for('static', filename='img/nothing.gif')}}"style="width:150px;height:150px;" /></td>
+    {% else %}
+    <td><img src="{{_album.art}}" alt="{{_album.name}}"/></td>
+    {% endif %}
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %} 

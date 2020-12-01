@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <link rel="stylesheet" href='{{url_for("static", filename="stylesheet.css")}}'>
-{% block title %} 
-{% endblock %} 
+<title>Music App</title>
 <header>
 <a href="/">
 <img src="{{url_for('static', filename='img/logo.jpg')}}" style="float:right;width:100px;height:100px;" />
@@ -20,7 +19,6 @@
 <li>Todos los álbumes: <a href="/album/_all_">Every Album in DB</a></li>
 <li>Buscar una canción: <a href="/track">Search Track</a></li>
 <li>Todas las canciones: <a href="/track/_all_">Every track in DB </a></li>
-  </ul>
 </ul>
 {% block content %} 
 {% endblock %} 

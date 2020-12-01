@@ -45,7 +45,7 @@ def insert_track(_track:Track):
 
 
 def main():
-    time.sleep(180)
+    time.sleep(210)
     key = get_api_key()
     print("Se va a scrapear la api, tomara algo de tiempo.....")
     
@@ -73,11 +73,12 @@ def main():
         tracks = Track_Creator(data_album.get('album'))
         for y2 in range(len(tracks)):
             _the_tracks.append(tracks[y2])
-    
-    print('Los tracks que se scrapearon son:\n')
+
+    print('Los tracks que se scrapearon son:\n')       
     for track in _the_tracks:
         print(f'{track.number} - {track.title} - {track.artist}')
         
+
 
     try:
         Artist.bulk_create(_the_artists)
@@ -91,6 +92,8 @@ def main():
         Track.bulk_create(_the_tracks)
     except Exception as e:
         print(f'Ha ocurrido un error y no se han registrado los datos el error es:\n{e}')
+
+
 
 
 if __name__ == "__main__":
