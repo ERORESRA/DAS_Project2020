@@ -119,7 +119,7 @@ def api_get_artist_by_id(_id:str):
     _id = int(_id)
     the_artist = get_artist_by_id(_id)
     return json.dumps(the_artist, indent=2)
-@app.route('/api/album_by_id/<_id>/',methods=['POST'])
+@app.route('/api/album_by_id/<_id>',methods=['POST'])
 def api_get_album_by_id(_id:str):
     _id = int(_id)
     the_album = get_album_by_id(_id)

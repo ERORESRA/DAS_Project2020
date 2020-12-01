@@ -1,6 +1,9 @@
 # DAS_Project2020 - Equipo 3
 Repository made to showcase our Software Design and architecture final project
 
+- Instrucciones de la aplicación:
+    - [Manual](INSTRUCTIONS.md)
+
 ## Equipo
 
 * Escarcega Ramirez Erick Orlando
