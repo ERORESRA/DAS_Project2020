@@ -1,0 +1,9 @@
+{% extends "query_template.html" %}
+{% block title %} 
+<title>500</title>
+{% endblock %} 
+{% block content %}
+<h1>Error interno, lamentamos que esto suceda, por favor regrese a la página de inicio dando click <a href="/">aquí</a></h1>
+<center><img src="{{url_for('static', filename='img/error500.png')}}"  /></center>
+<h2>Si continua experimentando problemas contacte a los desarrolladores</h2>
+{% endblock %} 

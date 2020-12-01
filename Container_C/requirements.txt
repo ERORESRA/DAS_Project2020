@@ -1,0 +1,4 @@
+peewee==3.14.0
+pymysql==0.10.1
+requests==2.25.0
+cryptography==3.2.1

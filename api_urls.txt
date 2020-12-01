@@ -1,0 +1,11 @@
+/api/artist/<_artist>
+/api/album/<_album>/
+/api/track/<_track>
+/api/artist/all
+/api/album/all
+/api/track/all
+/api/album/<_artist>
+/api/track/<_album>
+/api/artist_by_id/<_id>
+/api/artist_by_id/<_id>
+/api/track_by_id/<_id>

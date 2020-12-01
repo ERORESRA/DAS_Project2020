@@ -1,0 +1,10 @@
+{% extends "query_template.html" %}
+{% block title %} 
+<title>404</title>
+{% endblock %} 
+{% block content %} 
+<h1>Entró a una página que no existe, por favor regrese a la página de inicio dando click <a href="/">aquí</a></h1>
+<center>
+<img src="{{url_for('static', filename='img/error404.png')}}" />
+</center>
+{% endblock %} 

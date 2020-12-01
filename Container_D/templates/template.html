@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" href='{{url_for("static", filename="stylesheet.css")}}'>
+<title>Music App</title>
+<header>
+<a href="/">
+<img src="{{url_for('static', filename='img/logo.jpg')}}" style="float:right;width:100px;height:100px;" />
+</a>
+<h1>Consultas de Música en DB</h1>
+</header>
+
+<body>
+
+<ul>
+<li>About  <a href="/about">Sobre esta aplicación</a></li>
+<li>Buscar un artista:  <a href="/artist">Search Artist</a></li>
+<li>Todos los artistas:  <a href="/artist/_everyone_">Everyone!!!!</a></li>
+<li>Buscar un album: <a href="/album">Search Album</a></li>
+<li>Todos los álbumes: <a href="/album/_all_">Every Album in DB</a></li>
+<li>Buscar una canción: <a href="/track">Search Track</a></li>
+<li>Todas las canciones: <a href="/track/_all_">Every track in DB </a></li>
+</ul>
+{% block content %} 
+{% endblock %} 
+</body>
+<div class="footer">
+  Hecho por: <br>
+  <center>
+  <table>
+      <tr>
+  <td>Jesús González <a href="https://github.com/JesusAGC/"> - GitHub</a></td>
+      </tr>
+      <tr>
+  <td>Erick Escarcega<a href="https://github.com/ERORESRA/"> -  GitHub</a></td>
+  </tr>
+  </center>
+</div>
+</html>

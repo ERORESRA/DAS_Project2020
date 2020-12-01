@@ -1,0 +1,25 @@
+{% extends "query_template.html" %}
+{% block title %} 
+<title>{{_track.title}} - Artist</title>
+{% endblock %} 
+{% block content %} 
+<table>
+  <tr>
+    <th>id</th>
+    <th>Número de track</th>
+    <th>Título</th>
+    <th>Artista</th>
+    <th>Álbum</th>
+    <th>Duración</th>
+  </tr>
+  <tr>
+    <td>{{_track.id}}</td>
+    <td>{{_track.number}}</td>
+    <td>{{_track.title}}</td>
+    <td>{{_track.artist}}</td>
+    <td>{{_track.album}}</td>
+    <td>{{_track.duration}}</td>
+  </tr>
+</table>
+
+{% endblock %} 
