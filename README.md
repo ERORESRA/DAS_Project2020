@@ -18,6 +18,9 @@ Repository made to showcase our Software Design and architecture final project
 - Base de datos:
     - ![DB](DB_Diagram.jpeg)
 
+- Diagrama de arquitectura:
+    - ![DA](A_D.png)
+
 
 
 ## Especificaciones
