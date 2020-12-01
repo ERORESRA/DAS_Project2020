@@ -11,7 +11,14 @@ Repository made to showcase our Software Design and architecture final project
 
 ## Tema
 
-* Event-Driven Architecture: Implementa el proyecto siguiendo los lineamientos y requisitos del patrón de arquitectura basada en eventos
+* Clean Architecture: 
+    - [Clean Architecture](Clean-architecture.md)
+
+## Diagramas
+- Base de datos:
+    - ![DB](DB_Diagram.jpeg)
+
+
 
 ## Especificaciones
 

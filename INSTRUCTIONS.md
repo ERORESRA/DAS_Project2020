@@ -8,7 +8,7 @@ docker-compose up
 
 3. Después de los periodos de tiempo dados hayan transcurrido, ya se podrá accesar a la BD, por lo tanto MyAdmin y la aplicación de Flask ya estarán usables.
 
-- [PhpMyAdmin](localhost:8080)
+- [PhpMyAdmin](http://localhost:8080/)
 - [Flask App](http://localhost:5000/)
 
 4. Para las request se debe usar el método ``post()`` del módulo ``requests`` de python ejemplo:
